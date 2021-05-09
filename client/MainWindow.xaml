@@ -1,0 +1,15 @@
+﻿<Window x:Class="client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client"
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800">
+    <Grid Width="800" Height="450">
+        <Canvas x:Name="MyCanvas" MouseMove="Canvas_MouseMove" Height="350" Background="White">
+        </Canvas>
+        <Button Height="30" Margin="585,15,150,405" Content="Connect" Click="ConnectButton_Click"/>
+        <Button Height="30" Margin="690,15,30,405" Content="Disconnect" Click="DisconnectButton_Click"/>
+    </Grid>
+</Window>
